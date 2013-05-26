@@ -4,14 +4,14 @@
     id        = "com.phonegap.example"
     version   = "1.0.0">
 
-<name>My great app</name>
+<name>Weekly Quotes</name>
 
 <description>
 A simple platform independent mobile app
 </description>
 
 <author href="https://michielvandijk.nl" email="you@example.com">
-Your Name
+MHVD
 </author>
 <icon src="icon.png" width="245px" height="245px" />
 
