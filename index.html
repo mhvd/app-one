@@ -2,27 +2,28 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>jQuery Mobile Web App</title>
+<title>Weekly Quote</title>
 <link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
 <link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+
 </head> 
 <body> 
 
 <div data-role="page" id="page">
 	<div data-role="header">
-		<h1>Page One</h1>
+		<h1>Home</h1>
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
-			<li><a href="#page2">Page Two</a></li>
+			<li><a href="#page2">Weekly Quote</a></li>
             <li><a href="#page3">Page Three</a></li>
 			<li><a href="#page4">Page Four</a></li>
 		</ul>		
 	</div>
 	<div data-role="footer">
-		<h4>Page Footer</h4>
+		<h4>By MHVD &copy;</h4>
 	</div>
 </div>
 
@@ -31,7 +32,7 @@
 		<h1>Weekly quote</h1>
 	</div>
 	<div data-role="content">	
-	Quote for this week (week number <script type="text/javascript">
+     <script type="text/javascript">
    //http://tech-hacks.net/common/72/get-the-week-number-with-javascript-update/     
       function getWeek (getdate) { 
         var a, b, c, d, e, f, g, n, s, w; 
@@ -75,26 +76,119 @@
  
 weeknumber = getWeek(new Date());
 
-document.write(weeknumber);
+//document.write(weeknumber);
+   
+
+var quote=new Array();
+quote[0]='This is quote number 0';
+quote[1]='This is quote number 1';
+quote[2]='This is quote number 2';
+quote[3]='This is quote number 3';
+quote[4]='This is quote number 4';
+quote[5]='This is quote number 5';
+quote[6]='This is quote number 6';
+quote[7]='This is quote number 7';
+quote[8]='This is quote number 8';
+quote[9]='This is quote number 9';
+quote[10]='This is quote number 10';
+quote[11]='This is quote number 11';
+quote[12]='This is quote number 12';
+quote[13]='This is quote number 13';
+quote[14]='This is quote number 14';
+quote[15]='This is quote number 15';
+quote[16]='This is quote number 16';
+quote[17]='This is quote number 17';
+quote[18]='This is quote number 18';
+quote[19]='This is quote number 19';
+quote[20]='This is quote number 20';
+quote[21]='This is quote number 21';
+quote[22]='This is quote number 22';
+quote[23]='This is quote number 23';
+quote[24]='This is quote number 24';
+quote[25]='This is quote number 25';
+quote[26]='This is quote number 26';
+quote[27]='This is quote number 27';
+quote[28]='This is quote number 28';
+quote[29]='This is quote number 29';
+quote[30]='This is quote number 30';
+quote[31]='This is quote number 31';
+quote[32]='This is quote number 32';
+quote[33]='This is quote number 33';
+quote[34]='This is quote number 34';
+quote[35]='This is quote number 35';
+quote[36]='This is quote number 36';
+quote[37]='This is quote number 37';
+quote[38]='This is quote number 38';
+quote[39]='This is quote number 39';
+quote[40]='This is quote number 40';
+quote[41]='This is quote number 41';
+quote[42]='This is quote number 42';
+quote[43]='This is quote number 43';
+quote[44]='This is quote number 44';
+quote[45]='This is quote number 45';
+quote[46]='This is quote number 46';
+quote[47]='This is quote number 47';
+quote[48]='This is quote number 48';
+quote[49]='This is quote number 49';
+quote[50]='This is quote number 50';
+quote[51]='This is quote number 51';
+quote[52]='This is quote number 52';
+
+
+
+var name=quote[weeknumber];    
+//document.write(name);
+
+
+document.write('<p>The Quote for this week( ' + weeknumber + ') is:<i> ' + name + '</i></p>');       
+        </script>
         
-        
-        
-        </script>):		
+	
 	</div>
 	<div data-role="footer">
-		<h4>Page Footer</h4>
+		<h4>By MHVD &copy;</h4>
 	</div>
 </div>
 
 <div data-role="page" id="page3">
 	<div data-role="header">
-		<h1>Page Three</h1>
+		<h1>Daily quote</h1>
 	</div>
 	<div data-role="content">	
-		Content		
+		Content	
+        <script type="text/javascript">
+
+var quote=new Array();
+quote[0]='This is quote number one';
+quote[1]='This is quote number two';
+quote[2]='This is quote number three';
+quote[3]='This is quote number four';
+quote[4]='This is quote number five';
+quote[5]='This is quote number six';
+quote[6]='This is quote number seven';
+quote[7]='This is quote number eight';
+quote[8]='This is quote number nine';
+quote[9]='This is quote number ten';
+
+var speed=2000;
+var q=0;
+
+function showQuote() {
+
+document.getElementById("quotes").innerHTML=quote[q]; 
+q++;
+if(q==quote.length) {
+q=0;
+}
+}
+setInterval('showQuote()',speed);
+
+</script> 
+  <div id="quotes"></div>    
+        	
 	</div>
 	<div data-role="footer">
-		<h4>Page Footer</h4>
+		<h4>By MHVD &copy;</h4>
 	</div>
 </div>
 
@@ -103,10 +197,34 @@ document.write(weeknumber);
 		<h1>Page Four</h1>
 	</div>
 	<div data-role="content">	
-		Content		
+		Content	
+        
+     <SCRIPT LANGUAGE="JavaScript">
+// Courtesy of SimplytheBest.net - http://simplythebest.net/scripts/
+<!-- 
+document.write("<font face=arial size=-1><b>")
+now = new Date()
+if (now.getDay() == 5)
+document.write("It's Friday, the office opens from 9 A.M. to 12 A.M. and from 2.30 P.M. to 5 P.M.")
+if (now.getDay() == 6)
+document.write("It's Saturday, the office opens from 9 A.M. to 12 A.M.")
+if (now.getDay() == 0)
+document.write("It's Sunday, we're closed.")
+if (now.getDay() == 1)
+document.write("It's Monday, the office opens from 9 A.M. to 12 A.M. and from 2.30 P.M. to 5 P.M.")
+if (now.getDay() == 2)
+document.write("It's Tuesday, the office opens from from 2.30 P.M. to 5 P.M.")
+if (now.getDay() == 3)
+document.write("It's Wednesday, the office opens from 9 A.M. to 12 A.M. and from 2.30 P.M. to 5 P.M.")
+if (now.getDay() == 4)
+document.write("It's Thursday, the office opens from 9 A.M. to 12 A.M. and from 2.30 P.M. to 5 P.M.")
+document.write("</b></font>")
+//-->
+</SCRIPT>   
+        	
 	</div>
 	<div data-role="footer">
-		<h4>Page Footer</h4>
+		<h4>By MHVD &copy;</h4>
 	</div>
 </div>
 
